@@ -1,0 +1,37 @@
+.girlLeft,
+.girlRight {
+  position: absolute;
+  bottom: 0;
+  /* z-index: 11; */
+  user-select: none;
+  pointer-events: none;
+  width: 44em;
+}
+.girlLeft {
+  left: 3em;
+  width: 46em;
+  /* height: 56.125em; */
+}
+.girlRight {
+  right: 4em;
+}
+.hideIndex {
+  z-index: 0;
+}
+@media (orientation: portrait) {
+  .girlLeft {
+    font-size: 2em;
+    left: -8.9em;
+    z-index: 6;
+  }
+  .girlRight {
+    right: -14.2em;
+    font-size: 1.4em;
+    width: 63.0625em;
+    display: block;
+    z-index: 6;
+  }
+  .hideIndex {
+    z-index: 0;
+  }
+}

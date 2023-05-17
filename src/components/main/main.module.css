@@ -1,0 +1,165 @@
+.girlLeft,
+.girlRight {
+  position: absolute;
+  bottom: 0;
+  width: 38em;
+  user-select: none;
+  pointer-events: none;
+}
+.girlLeft {
+  left: 5%;
+}
+.girlRight {
+  left: 59%;
+  width: 36em;
+}
+.circle {
+  position: absolute;
+  bottom: 0;
+  left: 32em;
+}
+.mainCircle {
+  position: relative;
+  width: 37em;
+  pointer-events: none;
+  user-select: none;
+}
+.counter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 9em;
+  padding: 1em;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1em;
+  line-height: 135%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fffcfc;
+  background: linear-gradient(175.29deg, #d30300 2.73%, #850400 144.67%);
+  border: 0.4em solid #ffcb99;
+  border-radius: 2.2em 2.2em 0 0;
+}
+.countNumber {
+  font-size: 1.4em;
+}
+.spinner {
+  position: absolute;
+  width: 35em;
+  left: 0.9em;
+  top: 0.7em;
+  animation: 1.4s animStatic ease-in-out alternate infinite;
+}
+.spinner_1_spin {
+  composes: spinner;
+  animation: 4s animTurnOne ease-out forwards;
+}
+.spinner_2_spin {
+  composes: spinner;
+  animation: 6s animTurnTwo ease-out forwards;
+  animation-delay: 0.2s;
+}
+.button {
+  position: absolute;
+  left: 12.5em;
+  bottom: 12em;
+  width: 12em;
+  /* animation: 1s animButtonSize ease-out infinite alternate; */
+  animation: 1s animButtonLikeSasha infinite alternate-reverse ease-in-out;
+  cursor: pointer;
+}
+.buttonActive {
+  composes: button;
+  animation: none;
+  pointer-events: none;
+}
+.hide {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.show {
+  background: none;
+}
+@keyframes animButtonSize {
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes animStatic {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+@keyframes animTurnOne {
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes animTurnTwo {
+  100% {
+    /* transform: rotate(1872deg); */
+    transform: rotate(792deg);
+  }
+}
+@keyframes animButtonLikeSasha {
+  0% {
+    transform: scale(0.96);
+    filter: drop-shadow(0 0 0.15rem #ffc107) brightness(1);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0.7rem #ffc107) brightness(1.1);
+  }
+}
+@media (max-width: 640px) {
+  .section {
+    /* position: relative; */
+  }
+  .girls {
+    /* position: absolute; */
+  }
+  .circle {
+    top: 47em;
+  }
+  .mainCircle {
+    width: 108em;
+    left: -35em;
+    top: -10em;
+  }
+  .spinner {
+    width: 98em;
+    left: -30em;
+    top: -7em;
+  }
+  .counter {
+    font-size: 2.3em;
+    top: -4em;
+    left: 8.4em;
+  }
+  .button {
+    left: 2em;
+    top: 25em;
+    width: 34em;
+  }
+  .girlLeft,
+  .girlRight {
+    bottom: 0;
+    width: 77em;
+    z-index: 1;
+  }
+  .girlLeft {
+    /* left: 9em; */
+    left: -9em;
+  }
+  .girlRight {
+    left: 31em;
+    bottom: -9em;
+    width: 80em;
+  }
+}

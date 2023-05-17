@@ -1,0 +1,138 @@
+.overvlow {
+  overflow: hidden;
+}
+.modalBackDrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2em 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  /* backdrop-filter: blur(18px); */
+  transition: all 2s ease-in-out;
+  overflow: auto;
+  z-index: 2;
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 29em; */
+  margin: auto;
+  background: linear-gradient(99.28deg, #0e5208 11.32%, #3b6d2f 90.01%);
+  border-radius: 1.5em;
+}
+.logo {
+  position: absolute;
+  top: -6em;
+  width: 9.5em;
+  height: auto;
+}
+.textContainer {
+  padding: 4em 2.915em 4em 2.915em;
+}
+.titleFirst {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.35em;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 1.24em;
+}
+.titleSecond {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.33em;
+  line-height: 95%;
+  text-align: center;
+  letter-spacing: -0.1em;
+  text-transform: uppercase;
+  color: #d2e81a;
+  margin-bottom: 0.715em;
+}
+.titleThird {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.05em;
+  line-height: 112%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.btn {
+  position: absolute;
+  bottom: -1.2em;
+  padding: 0.6em 4.25em;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.25em;
+  line-height: 137%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f2ff81;
+  background: linear-gradient(152.52deg, #d20401 15.63%, #930401 82.89%);
+  border: 0.07em solid #f2ff81;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover,
+.btn:focus {
+  filter: brightness(1.25);
+}
+.shortPading {
+  padding: 0.6em 1.25em;
+}
+.inActive {
+  display: none;
+}
+.activeSecond {
+  /* display: block; */
+  margin-top: 0.35em;
+}
+@media (max-width: 640px) {
+  .container {
+    font-size: 2.2em;
+  }
+  /* .textContainer {
+    padding: 4.3em 2.915em 4.1em 2.915em;
+  } */
+  .titleFirst {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobTitle {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+  .titleSecond {
+    font-size: 4.2em;
+    margin-bottom: 0.715em;
+  }
+  .activeSecond {
+    font-size: 0.65em;
+    line-height: 106%;
+    letter-spacing: normal;
+  }
+  .titleThird {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .btn {
+    font-size: 1.6em;
+    padding: 0.6em 2.25em;
+  }
+}

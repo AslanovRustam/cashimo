@@ -1,13 +1,85 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+html {
+  font-size: 0.833vw;
+  height: 100%;
+  overflow-y: hidden;
+}
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir;
+  text-decoration: none;
+  list-style: none;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 800;
+  src: local("Avenir"),
+    url(./fonts/avenir/AvenirLTStd-Black.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 600;
+  src: local("Avenir"),
+    url(./fonts//avenir/AvenirLTStd-Book.otf) format("opentype");
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 400;
+  src: local("Avenir"),
+    url(./fonts/avenir/AvenirLTStd-Roman.otf) format("opentype");
+}
+@media (orientation: landscape) and (min-aspect-ratio: 1920 / 853) {
+  html {
+    font-size: 0.65vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 15 / 7) {
+  html {
+    font-size: 0.67vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 640 / 311) {
+  html {
+    font-size: 0.7vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 80 / 41) {
+  html {
+    font-size: 0.73vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 1920 / 1007) {
+  html {
+    font-size: 0.76vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 384 / 209) {
+  html {
+    font-size: 0.8vw;
+  }
 }

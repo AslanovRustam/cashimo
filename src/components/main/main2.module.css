@@ -1,0 +1,179 @@
+.section {
+  /* position: relative; */
+  position: static;
+  display: flex;
+  justify-content: center;
+}
+.wheel__center {
+  width: 50.5em;
+  height: 49.1875em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -6.5em;
+}
+.background {
+  /* width: 50.5em; */
+  /* height: 49.1875em; */
+  width: 37em;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+}
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 9.5em;
+  transform: translateX(-50%);
+  /* width: 13.1875em; */
+  /* height: 26em; */
+  width: 9.4em;
+  height: auto;
+  z-index: 1;
+}
+.sectors {
+  /* width: 43em; */
+  /* height: 43em; */
+  width: 34.5em;
+  height: auto;
+  animation: 1.4s animStatic ease-in-out alternate infinite;
+}
+.sectors_1_spin {
+  composes: sectors;
+  animation: 4s animTurnOne ease-out forwards;
+}
+.sectors_2_spin {
+  composes: sectors;
+  animation: 6s animTurnTwo ease-out forwards;
+  animation-delay: 0.2s;
+}
+.button {
+  position: absolute;
+  top: 45.1%;
+  width: 4.625em;
+  height: auto;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  transition: -webkit-filter 0.12s ease-in-out;
+  transition: filter 0.12s ease-in-out;
+  transition: filter 0.12s ease-in-out, -webkit-filter 0.12s ease-in-out;
+  font-size: 1em;
+  z-index: 1;
+  animation: 1s animButtonLikeSasha infinite alternate-reverse ease-in-out;
+}
+.buttonActive {
+  composes: button;
+  animation: none;
+  pointer-events: none;
+}
+.hideIndex {
+  z-index: 0;
+}
+.counter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* top: 1.7em; */
+  top: 14.4em;
+  width: 9em;
+  padding: 1em;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.8em;
+  line-height: 135%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fffcfc;
+  background: linear-gradient(175.29deg, #d30300 2.73%, #850400 144.67%);
+  border: 0.3em solid #ffcb99;
+  border-radius: 2.2em 2.2em 0 0;
+}
+.countNumber {
+  font-size: 1.4em;
+}
+.points {
+  position: absolute;
+  z-index: 1;
+  bottom: 9.4em;
+  width: 30em;
+  animation: 1.5s animPoints infinite alternate-reverse ease-in-out;
+}
+@keyframes animButtonSize {
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes animStatic {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+@keyframes animTurnOne {
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes animTurnTwo {
+  100% {
+    transform: rotate(792deg);
+  }
+}
+@keyframes animButtonLikeSasha {
+  0% {
+    transform: scale(0.96);
+    filter: drop-shadow(0 0 0.15rem #ffc107) brightness(1);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0.7rem #ffc107) brightness(1.1);
+  }
+}
+@keyframes animPoints {
+  0% {
+    filter: drop-shadow(0 0 0.15rem #e1ded3) brightness(1);
+  }
+  100% {
+    filter: drop-shadow(0 0 1rem #342805) brightness(3);
+  }
+}
+@media (max-width: 640px) {
+  .section {
+    position: relative;
+    font-size: 3em;
+  }
+  .wheel__center {
+    /* height: auto; */
+  }
+  .arrow {
+    /* top: 8em; */
+  }
+  .points {
+    /* bottom: 7.9em; */
+  }
+  .counter {
+    top: 1em;
+    /* top: 0; */
+  }
+}
+@media (orientation: portrait) {
+  .section {
+    height: auto;
+    padding-bottom: 27em;
+    min-height: 100%;
+  }
+}
