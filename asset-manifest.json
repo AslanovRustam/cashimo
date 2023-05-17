@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cashimo-wheel/static/css/main.2c2a3e3c.css",
+    "main.js": "/cashimo-wheel/static/js/main.c62ecfc6.js",
+    "static/media/Bg2.png": "/cashimo-wheel/static/media/Bg2.c22273731fbc99b4db2a.png",
+    "static/media/girlgreen.png": "/cashimo-wheel/static/media/girlgreen.ac5d34e0cf2753a0a231.png",
+    "static/media/girlred.png": "/cashimo-wheel/static/media/girlred.e1df482dc211f296ff52.png",
+    "static/media/Bg_mob_1.png": "/cashimo-wheel/static/media/Bg_mob_1.f46bd2af9f1e9d05a069.png",
+    "static/media/sectors2.png": "/cashimo-wheel/static/media/sectors2.8dc7685225a76fe8b58d.png",
+    "static/media/wheel3.png": "/cashimo-wheel/static/media/wheel3.b17442f8f7114ecde6dd.png",
+    "static/media/AvenirLTStd-Black.otf": "/cashimo-wheel/static/media/AvenirLTStd-Black.7ce894e12078ca8c5134.otf",
+    "static/media/AvenirLTStd-Book.otf": "/cashimo-wheel/static/media/AvenirLTStd-Book.813557df4c7a90b1a474.otf",
+    "static/media/AvenirLTStd-Roman.otf": "/cashimo-wheel/static/media/AvenirLTStd-Roman.0bfb049d9455e81fd1da.otf",
+    "static/media/logo.png": "/cashimo-wheel/static/media/logo.254bac0ef03c89a562d1.png",
+    "static/media/arrow.png": "/cashimo-wheel/static/media/arrow.75654ec0a74190d50628.png",
+    "static/media/points.png": "/cashimo-wheel/static/media/points.ae38c7598d708acdb5e4.png",
+    "static/media/logoCashimo.png": "/cashimo-wheel/static/media/logoCashimo.35464953fa77fa63e6a7.png",
+    "static/media/left.png": "/cashimo-wheel/static/media/left.93dd9eb576d1d00c8f47.png",
+    "index.html": "/cashimo-wheel/index.html",
+    "main.2c2a3e3c.css.map": "/cashimo-wheel/static/css/main.2c2a3e3c.css.map",
+    "main.c62ecfc6.js.map": "/cashimo-wheel/static/js/main.c62ecfc6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c2a3e3c.css",
+    "static/js/main.c62ecfc6.js"
+  ]
+}
